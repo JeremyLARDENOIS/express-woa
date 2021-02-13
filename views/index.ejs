@@ -1,21 +1,10 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>PokeWOA</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="icon" href="/images/favicon.ico" />
-    
-  </head>
-  <body>
-  <% include header %>
-    <div class="container">
-        <h1><%= title %></h1>
-        <p>Welcome to <%= title %></p>
-        
-        Ceci est un site crée de toute pièce par Jérémy LARDENOIS pour son projet WOA <br/>
-        Il est encore en construction :) 
-    </div>
-  <% include footer %>
-</body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-</html>
+<% include require %>
+  <div class="container">
+      <h1><%= title %></h1>
+      <p>Welcome to <%= title %></p>
+      
+      Ceci est un site crée de toute pièce par Jérémy LARDENOIS pour son projet WOA <br/>
+      Il est encore en construction :) 
+LOGO : <img src="/images/favicon.ico" alt="une pokeball">
+  </div>
+<% include footer %>
