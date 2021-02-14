@@ -1,10 +1,12 @@
 <% include require %>
-  <div class="container">
-      <h1><%= title %></h1>
-      <p>Welcome to <%= title %></p>
-      
-      Ceci est un site crée de toute pièce par Jérémy LARDENOIS pour son projet WOA <br/>
-      Il est encore en construction :) 
-LOGO : <img src="/images/favicon.ico" alt="une pokeball">
+  <div class="container my-5">
+      <h1 class="text-center"> Pokemon-WOA </h1>
+      <p>Welcome to Pokemon-WOA</p>
+      <div class="container">
+        <p class="my-3">
+          Do you want to see a random pokemon ? <a href="/random"><button class="btn btn-primary my-3"> Get a random pokemon </button></a><br>
+        </p>
+      </div>
+    <img class="rounded mx-auto d-block" src="/images/favicon.ico" alt="une pokeball">
   </div>
 <% include footer %>
