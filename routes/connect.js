@@ -16,8 +16,11 @@ router.post('/', (req, res) => {
   const { password } = req.body;
   if (username === 'admin' && password === 'password') {
     res.setHeader('Set-Cookie', cookie.serialize('value', "h4ppy v4l3nt1n3'5 d4y"));
+    res.redirect('/');
+  } else {
+    const cookies = cookie.parse(req.headers.cookie || '');
+    res.render('connect', { logaction: logaction(cookies) });
   }
-  res.redirect('/');
 });
 
 module.exports = router;

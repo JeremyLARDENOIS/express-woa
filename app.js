@@ -9,6 +9,7 @@ const usersRouter = require('./routes/users');
 const pokemonRouter = require('./routes/pokemon');
 const connectRouter = require('./routes/connect');
 const disconnectRouter = require('./routes/disconnect');
+const adminRouter = require('./routes/admin');
 
 const app = express();
 
@@ -26,7 +27,8 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/pokemon', pokemonRouter);
 app.use('/connect*', connectRouter);
-app.use('/disconnect*', disconnectRouter);
+app.use('/disconnect', disconnectRouter);
+app.use('/admin', adminRouter);
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
